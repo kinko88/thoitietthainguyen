@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrow.io Weather Widget</title>
+</head>
+<body>
+    <!-- Phần tử div chứa widget của Tomorrow.io -->
+    <div class="tomorrow"
+        data-location-id="130606"
+        data-language="VI"
+        data-unit-system="METRIC"
+        data-skin="light"
+        data-widget-type="aqiPollutant"
+        style="padding-bottom:22px;position:relative;">
+        
+        <!-- Liên kết tới Tomorrow.io Weather API -->
+        <a href="https://www.tomorrow.io/weather-api/" 
+           rel="nofollow noopener noreferrer" 
+           target="_blank" 
+           style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+            <img alt=" " 
+                 src="https://weather-website-client.tomorrow.io/img/powered-by.svg" 
+                 width="250" height="18"/>
+        </a>
+    </div>
+
+    <!-- Tải SDK của Tomorrow.io để hiển thị widget -->
+    <script src="https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js" async></script>
+</body>
+</html>
