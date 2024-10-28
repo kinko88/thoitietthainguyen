@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomorrow.io Weather Widget</title>
     <style>
+        /* Đặt phần tử body để căn giữa nội dung theo cả chiều dọc và ngang */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         /* Ẩn ảnh "powered by" ở chân trang và xóa khoảng trống */
         .tomorrow a, .tomorrow .poweredBy {
             display: none !important;
             visibility: hidden !important;
         }
-        /* Xóa khoảng thừa dưới widget */
+
+        /* Đặt kích thước cụ thể cho widget và điều chỉnh tỷ lệ */
         .tomorrow {
+            width: 100%;
+            height: 130px;
+            transform: scale(1);
+            transform-origin: center;
             padding: 0 !important;
             margin: 0 !important;
-            height: auto !important;
             overflow: hidden;
         }
     </style>
